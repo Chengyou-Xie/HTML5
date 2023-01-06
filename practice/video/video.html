@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="#" />
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            /* body {
+                padding: 5rem;
+            } */
+        </style>
+    </head>
+
+    <body>
+        <h1>影片控制面板</h1>
+        <video id="myVideo" width="320px" height="240px"></video>
+        <br />
+        <button id="palyBtn">Play</button>
+        <button id="fullBtn">FullScreen</button>
+        <br />
+        <div>
+            <p>
+                Volume：<span id="volumeDisplay">?</span>
+                <button id="lowerVolumeBtn">-</button>
+                <button id="higherVolumeBtn">+</button>
+            </p>
+        </div>
+        <div>
+            <p>Time：<span id="timeDisplay">?/?</span></p>
+            <input type="range" id="progressBar" min="0" value="0" />
+        </div>
+
+        <script src="//unpkg.com/jquery"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

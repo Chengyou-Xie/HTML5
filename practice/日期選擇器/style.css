@@ -1,0 +1,8 @@
+body {
+    text-align: center;
+    padding: 5rem;
+}
+canvas {
+    border: 2px solid black;
+    background-image: url(./images/grasses68.gif);
+}

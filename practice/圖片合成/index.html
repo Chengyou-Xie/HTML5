@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1 style="text-align: center">圖片合成</h1>
+        <div class="container">
+            <div class="c1">
+                <div id="dropBox1" class="dropBox">
+                    Choose file by the button below or drop here.
+                </div>
+                <br />
+                <input
+                    id="input1"
+                    type="file"
+                    name="inputFile1"
+                    class="inputFile"
+                    data-target="file-uploader"
+                    multiple
+                />
+                <p id="p1"></p>
+            </div>
+            <div class="c2">
+                <div id="dropBox2" class="dropBox">
+                    Choose file by the button below or drop here.
+                </div>
+                <br />
+                <input
+                    id="input2"
+                    type="file"
+                    name="inputFile2"
+                    class="inputFile"
+                    data-target="file-uploader"
+                    multiple
+                />
+                <p id="p2"></p>
+            </div>
+        </div>
+        <h2>第一張上傳人物，第二張上傳背景!!!</h2>
+
+        <hr />
+        <div id="result"></div>
+
+        <script src="//unpkg.com/jquery"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>

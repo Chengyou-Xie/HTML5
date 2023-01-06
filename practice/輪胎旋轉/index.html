@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            body {
+                padding: 5rem;
+            }
+            #car {
+                position: fixed;
+                width: 400px;
+                height: 200px;
+                background-color: aqua;
+            }
+            .wheel {
+                width: 100px;
+                animation: rotate 1s infinite linear;
+                /* animation-name: rotate;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear; */
+            }
+            #left {
+                position: relative;
+                left: 20px;
+                top: 150px;
+            }
+            #right {
+                position: relative;
+                left: 170px;
+                top: 150px;
+            }
+
+            @keyframes rotate {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="car"></div>
+        <img src="./wheel.png" alt="wheel" class="wheel" id="left" />
+        <img src="./wheel.png" alt="wheel" class="wheel" id="right" />
+
+        <script src="//unpkg.com/jquery"></script>
+        <script>
+            // $(function () {
+            //     let degree = 0;
+            //     setInterval(() => {
+            //         degree += 20;
+            //         $(".wheel").css("transform", `rotate(${degree}deg)`);
+            //     }, 100);
+            // });
+        </script>
+    </body>
+</html>
