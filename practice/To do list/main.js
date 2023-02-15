@@ -12,7 +12,7 @@ $(function () {
 readHandler();
 
 function readHandler() {
-    let url = "https://github.com/Chengyou-Xie/HTML5/blob/master/db.json";
+    let url = "https://raw.githubusercontent.com/Chengyou-Xie/HTML5/master/db.json";
     $.getJSON(url)
         .done((msg) => {
             $("table tr:not(:first)").remove();
